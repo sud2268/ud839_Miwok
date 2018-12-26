@@ -31,24 +31,17 @@ public class NumbersActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("one","lutti"));
-
         words.add(new Word("two","ottiko"));
-
         words.add(new Word("three","colookosu"));
         words.add(new Word("four","oyyisa"));
         words.add(new Word("five","massokka"));
         words.add(new Word("six","temmokka"));
-
         words.add(new Word("seven","kenekaku"));
-
-
         words.add(new Word("eight","kawinta"));
-
         words.add(new Word("nine","wo'e"));
         words.add(new Word("ten","na'aacha"));
 
-        WordAdapter wordAdapter =
-                new WordAdapter(this, words);
+        WordAdapter wordAdapter =new WordAdapter(this, words);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
