@@ -6,17 +6,16 @@ public class Word {
     private int mImageResourceId;
     private int mAudioResourceId;
 
-    public Word(String defaultTranslation, String miwokTranslation) {
+
+    public Word(String defaultTranslation, String miwokTranslation,int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        mAudioResourceId = audioResourceId;
     }
 
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId) {
-        mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
-        mImageResourceId = imageResourceId;
 
-    }
+
+
     public Word(String defaultTranslation, String miwokTranslation, int imageResourceId,int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
